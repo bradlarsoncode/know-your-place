@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const User = require('./models/user');
-const { restart } = require('nodemon');
+//const { restart } = require('nodemon');
 
 const app = express();
 
@@ -9,8 +9,6 @@ app.use(express.urlencoded({ extended: false}));
 app.use(express.json({ extended: false}));
 
 const dbUrl = require('./config/keys').mongoURI;
-
-//const dbUrl = 'mongodb+srv://brad:Home5656!@place-mern.9dhm1.mongodb.net/react-node?retryWrites=true&w=majority'
 
 const connectDB = async () => {
     try {
