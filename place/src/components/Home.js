@@ -7,7 +7,6 @@ export default function Home() {
 
     const getUsers = async () => {
         const res = await axios.get('/api/users');
-        //console.log(res.data.users)
         setUsers(res.data.users)
     }
 
