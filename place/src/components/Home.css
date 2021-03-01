@@ -91,6 +91,55 @@ main {
   transform: rotateZ(-43deg);
 }
 
-#checktime{
-  
+
+button {
+    background-color: #0A0F4F;
+    font-size: 24px;
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+    transition: .5s all ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightgray;
+    color: #0A0F4F;
+}
+
+#btn1 {
+animation: fadeIn ease 8s;
+-webkit-animation: fadeIn ease 8s;
+-moz-animation: fadeIn ease 8s;
+-o-animation: fadeIn ease 8s;
+-ms-animation: fadeIn ease 8s;
+}
+@keyframes fadeIn {
+ 0% { opacity:0; }
+70% { opacity:0; }
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+ 0% { opacity:0; }
+    70% { opacity:0; }
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+ 0% { opacity:0; }
+    70% { opacity:0; }
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+ 0% { opacity:0; }
+    70% { opacity:0; }
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+ 0% { opacity:0; }
+    70% { opacity:0; }
+100% {opacity:1;}
 }
