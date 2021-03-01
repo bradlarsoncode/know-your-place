@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 export default function Nav() {
     return (
         <nav>
-            <h2>Know Your Place</h2>
+            {/* <h2>Know Your Place</h2>
             <ul>
                 <li>
                     <Link to="/">HOME</Link>
@@ -13,7 +13,7 @@ export default function Nav() {
                 <li>
                     <Link to="/register">Register</Link>
                 </li>
-            </ul>
+            </ul> */}
         </nav>
     )
 }

@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
     <div className="App">
-      <Nav />
+      {/* <Nav /> */}
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/register' component={Form} />
