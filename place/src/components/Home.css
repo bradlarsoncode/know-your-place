@@ -89,6 +89,41 @@ main {
   -webkit-transform: rotateZ(-43deg);
   -ms-transform: rotateZ(-43deg);
   transform: rotateZ(-43deg);
+  animation: strokeFade ease 7s;
+  -webkit-animation: strokeFade ease 7s;
+  -moz-animation: strokeFade ease 7s;
+  -o-animation: strokeFade ease 7s;
+  -ms-animation: strokeFade ease 7s;
+}
+
+@keyframes strokeFade {
+  0% { opacity:0; }
+  50% { opacity:0; }
+  100% {opacity:1;}
+}
+
+@-moz-keyframes strokeFade {
+  0% { opacity:0; }
+  50% { opacity:0; }
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes strokeFade {
+  0% { opacity:0; }
+  50% { opacity:0; }
+  100% {opacity:1;}
+}
+
+@-o-keyframes strokeFade {
+  0% { opacity:0; }
+  50% { opacity:0; }
+  100% {opacity:1;}
+}
+
+@-ms-keyframes strokeFade {
+  0% { opacity:0; }
+  50% { opacity:0; }
+  100% {opacity:1;}
 }
 
 
@@ -143,3 +178,4 @@ animation: fadeIn ease 8s;
     70% { opacity:0; }
 100% {opacity:1;}
 }
+

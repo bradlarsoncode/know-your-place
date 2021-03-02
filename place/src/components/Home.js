@@ -17,24 +17,6 @@ export default function Home() {
         getUsers();
     }, [])
 
-    // let enableDisable = function(){
-    //     let UTC_hours = new Date().getUTCHours() +1;
-    //     if (UTC_hours > 0 && UTC_hours < 1){
-    //         document.getElementsByTagName("Link").disabled = false;
-    //     }
-    //     else
-    //     {
-    //         document.getElementsByTagName("Link").disabled = true;
-    //     }
-    // };
-
-    // setInterval(enableDisable, 1000*60);
-    // enableDisable();
-    // window.addEventListener("load", function(){
-    //     let newButton = document.getElementsByTagName("Link");
-    //     newButton.style.visibility = new Date().getHours() > 23 ? 'none' : '';
-    // });
-
     useEffect(() => {
         var today = new Date();
         var day = today.getMonth();
@@ -45,59 +27,37 @@ export default function Home() {
         var hour = today.getHours();
         var minute = today.getMinutes();
         var second = today.getSeconds();
-            if(hour>="10" && hour<="14"){
+            if(hour>="9" && hour<="14"){
             $("#btn1").show();}
             else{$("#btn1").hide()}
         }
     }, [])
 
+    // const message = users.length > 0 ? "All Users" : "No Users Found"
 
-
-    const message = users.length > 0 ? "All Users" : "No Users Found"
-
-    const allUsers = users.length > 0 && users.map((user, index) => {
-        return(
-            <li key={index}>Name: {user.name} // Email: {user.email}</li>
-        )
-    })
-    // return (
-    //     <main>
-    //         <div id="parchment">
-    //             <div className="typewriter">
-    //                 {/* <span id="parchment"></span> */}
-    //                 <h1>Know Your Place.</h1>
-    //                 {/* <h1 className="title">{message}</h1>
-    //                 <ul className="users">
-    //                     {allUsers}
-    //                 </ul> */}
-    //             </div>
-    //         </div>
-    //     </main>
-        
-    // )
+    // const allUsers = users.length > 0 && users.map((user, index) => {
+    //     return(
+    //         <li key={index}>Name: {user.name} // Email: {user.email}</li>
+    //     )
+    // })
         return (
             
         <main>
             <div id="parchment">
                 <div id='contain'>
                     <div className="typewriter">
-                        {/* <span id="parchment"></span> */}
                         <h1>Know Your Place.</h1>
                         {/* <h1 className="title">{message}</h1>
                         <ul className="users">
                             {allUsers}
-                        </ul> */}
-                        
+                        </ul> */} 
                     </div>
                      <Link to="/register">
                         <button type="button" id='btn1'>Basic</button>
-                    </Link>
-                        
+                    </Link>   
                 </div>
                 <img className='stroke' src={stroke} alt='stroke'/> 
             </div>
-           
         </main>
-        
     )
 }
