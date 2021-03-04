@@ -7,23 +7,27 @@
     margin-bottom: 24px;
 }
 
-/* GLOBAL STYLES */
 body {
-    background-image: url(https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
-    background-size: cover;
+    
     /* background: #333; */
     /* padding-top: 5em;
     display: flex;
     justify-content: center; */
-}
+/* } */
 
-main {
+/* main {
   width: 100%;
   height: auto;
+} */
+
+#homeBG {
+  background-image: url(https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  background-size:cover;
+  width: 100vw;
+  height: 100vh;
+  padding: 1em;
 }
 
-
-/* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
   color: black;
   opacity: .75;
@@ -81,9 +85,9 @@ main {
   position:absolute;
   display: inline-block;
   padding-left: inherit;
-	width: 53vw;
-  left: -7vw;
-  bottom: 18vh;
+	width: 50vw;
+  left: -6vw;
+  bottom: 20vh;
   overflow: hidden;
   height: auto;
   -webkit-transform: rotateZ(-43deg);
@@ -94,40 +98,41 @@ main {
   -moz-animation: strokeFade ease 7s;
   -o-animation: strokeFade ease 7s;
   -ms-animation: strokeFade ease 7s;
+  opacity: .7;
 }
 
 @keyframes strokeFade {
   0% { opacity:0; }
   50% { opacity:0; }
-  100% {opacity:1;}
+  100% {opacity:.7;}
 }
 
 @-moz-keyframes strokeFade {
   0% { opacity:0; }
   50% { opacity:0; }
-  100% {opacity:1;}
+  100% {opacity:.7;}
 }
 
 @-webkit-keyframes strokeFade {
   0% { opacity:0; }
   50% { opacity:0; }
-  100% {opacity:1;}
+  100% {opacity:.7;}
 }
 
 @-o-keyframes strokeFade {
   0% { opacity:0; }
   50% { opacity:0; }
-  100% {opacity:1;}
+  100% {opacity:.7;}
 }
 
 @-ms-keyframes strokeFade {
   0% { opacity:0; }
   50% { opacity:0; }
-  100% {opacity:1;}
+  100% {opacity:.7;}
 }
 
 
-button {
+/* button {
     background-color: #0A0F4F;
     font-size: 24px;
     color: white;
@@ -140,42 +145,48 @@ button {
 button:hover {
     background-color: lightgray;
     color: #0A0F4F;
-}
+} */
 
 #btn1 {
 animation: fadeIn ease 8s;
+position: absolute;
 -webkit-animation: fadeIn ease 8s;
 -moz-animation: fadeIn ease 8s;
 -o-animation: fadeIn ease 8s;
 -ms-animation: fadeIn ease 8s;
+float: right;
+margin-top: -210px;
+height: 23vh;
+opacity: .8;
+margin-left: 720px
 }
 @keyframes fadeIn {
  0% { opacity:0; }
 70% { opacity:0; }
-100% {opacity:1;}
+100% {opacity:.8;}
 }
 
 @-moz-keyframes fadeIn {
  0% { opacity:0; }
     70% { opacity:0; }
-100% {opacity:1;}
+100% {opacity:.8;}
 }
 
 @-webkit-keyframes fadeIn {
  0% { opacity:0; }
     70% { opacity:0; }
-100% {opacity:1;}
+100% {opacity:.8;}
 }
 
 @-o-keyframes fadeIn {
  0% { opacity:0; }
     70% { opacity:0; }
-100% {opacity:1;}
+100% {opacity:.8;}
 }
 
 @-ms-keyframes fadeIn {
  0% { opacity:0; }
     70% { opacity:0; }
-100% {opacity:1;}
+100% {opacity:.8;}
 }
 

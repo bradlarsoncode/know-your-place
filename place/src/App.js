@@ -4,6 +4,7 @@ import React from 'react';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import Form from './components/Form'
+import Place from './components/Place'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/register' component={Form} />
+        <Route exact path='/place' component={Place} />
       </Switch>
     </div>
     </BrowserRouter>

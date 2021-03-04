@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, {useState, useEffect} from 'react';
 import './Home.css'
 import stroke from '../stroke.png'
+import door from '../door.png'
 import $ from 'jquery';
 import { Link } from 'react-router-dom'
 
@@ -27,7 +28,7 @@ export default function Home() {
         var hour = today.getHours();
         var minute = today.getMinutes();
         var second = today.getSeconds();
-            if(hour>="9" && hour<="14"){
+            if(hour>="7" && hour<="14"){
             $("#btn1").show();}
             else{$("#btn1").hide()}
         }
@@ -42,22 +43,22 @@ export default function Home() {
     // })
         return (
             
-        <main>
-            <div id="parchment">
-                <div id='contain'>
-                    <div className="typewriter">
-                        <h1>Know Your Place.</h1>
-                        {/* <h1 className="title">{message}</h1>
-                        <ul className="users">
-                            {allUsers}
-                        </ul> */} 
+            <div id='homeBG'>
+                <div id="parchment">
+                    <div id='contain'>
+                        <div className="typewriter">
+                            <h1>Know Your Place.</h1>
+                            {/* <h1 className="title">{message}</h1>
+                            <ul className="users">
+                                {allUsers}
+                            </ul> */} 
+                        </div>
+                            <Link to="/place">
+                                <img src={door} id='btn1'></img>       
+                            </Link> 
                     </div>
-                     <Link to="/register">
-                        <button type="button" id='btn1'>Basic</button>
-                    </Link>   
+                    <img className='stroke' src={stroke} alt='stroke'/> 
                 </div>
-                <img className='stroke' src={stroke} alt='stroke'/> 
             </div>
-        </main>
     )
 }
