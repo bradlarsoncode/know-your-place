@@ -1,10 +1,11 @@
 import React from 'react'
+import Video from './Video'
+import './Place.css'
 
 export default function Place() {
     return (
         <div className='place'>
-            <h1>HI</h1>
-            <iframe src="https://titanembeds.com/embed/816674740596375583" height="600" width="800" frameborder="0"></iframe>
+            <Video/>
         </div>
     )
 }

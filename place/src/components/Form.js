@@ -6,6 +6,7 @@ export default function Form() {
     const [userDetails, setUserDetails] = useState({
         userName: '',
         userEmail: '',
+        userDescription: '',
         message: ''
     })
 
@@ -21,7 +22,8 @@ export default function Form() {
 
         const body = JSON.stringify({
             userName: userDetails.userName,
-            userEmail: userDetails.userEmail
+            userEmail: userDetails.userEmail,
+            userDescription: userDetails.userDescription
         });
         const response = await axios.post("/api/register", body, {
             headers: {
@@ -42,6 +44,9 @@ export default function Form() {
                 <br />
                 <label>Email: </label>
                 <input required-type="email" id="userEmail" name="userEmail" onChange={formValues}/>
+                <br />
+                <label>Description of Project: </label>
+                <input required-type="text" id="userDescription" name="userDescription" onChange={formValues}/>
                 <br />
                 <button type="submit">Register</button>
                 {userDetails.message ? <h1>{userDetails.message}</h1> : null}

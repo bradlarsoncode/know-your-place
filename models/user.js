@@ -8,10 +8,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         unique: true
     }
-    // ,
-    // description: {
-    //     type: String
-    // }
+    ,
+    description: {
+        type: String
+    }
 });
 
 const User = mongoose.model('User', userSchema);
