@@ -6,6 +6,7 @@ export default function Place() {
     return (
         <div className='place'>
             <Video/>
+            <h2>Hi</h2>
         </div>
     )
 }
