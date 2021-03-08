@@ -23,6 +23,7 @@
     "nodemon": "^2.0.7",
     "react-images": "1.0.0",
     "react-jutsu": "^3.0.2",
-    "react-photo-gallery": "^8.0.0"
+    "react-photo-gallery": "^8.0.0",
+    "simple-react-lightbox": "^3.6.3"
   }
 }

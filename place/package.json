@@ -12,10 +12,11 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-images": "1.0.0",
+    "react-jutsu": "^3.0.2",
     "react-photo-gallery": "^8.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
-    "react-jutsu": "^3.0.2",
+    "simple-react-lightbox": "^3.6.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
