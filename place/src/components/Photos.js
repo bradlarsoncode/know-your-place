@@ -1,10 +1,12 @@
+
 export const photos = [
   {
     src: "https://webfilms-films.s3.amazonaws.com/place/image.jpg",
     srcSet: ["https://webfilms-films.s3.amazonaws.com/place/image.jpg 1700w"],
     sizes: ["30vw"],
     width: 4,
-    height: 3
+    height: 3,
+    caption: "this is a test"
   },
     {
     src: "https://webfilms-films.s3.amazonaws.com/place/image(1).jpg",
