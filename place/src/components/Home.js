@@ -1,8 +1,6 @@
 import axios from 'axios';
 import React, {useState, useEffect} from 'react';
 import './Home.css'
-import stroke from '../stroke.png'
-import door from '../door.png'
 import $ from 'jquery';
 import { Link } from 'react-router-dom'
 
@@ -54,10 +52,10 @@ export default function Home() {
                             </ul> */} 
                         </div>
                             <Link to="/place">
-                                <img src={door} id='btn1'></img>       
+                                <img src="https://webfilms-films.s3.amazonaws.com/place/door-1.png" id='btn1'></img>       
                             </Link> 
                     </div>
-                    <img className='stroke' src={stroke} alt='stroke'/> 
+                    <img className='stroke' src='https://webfilms-films.s3.amazonaws.com/place/stroke.png' alt='stroke'/> 
                 </div>
             </div>
     )

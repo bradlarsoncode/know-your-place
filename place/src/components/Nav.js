@@ -5,15 +5,15 @@ import {Link} from 'react-router-dom';
 export default function Nav() {
     return (
         <nav>
-            {/* <h2>Know Your Place</h2>
+
             <ul>
                 <li>
-                    <Link to="/">HOME</Link>
+                    <Link to="/pieces">Pieces</Link>
                 </li>
                 <li>
-                    <Link to="/register">Register</Link>
+                    <Link to="/place">Video Chat</Link>
                 </li>
-            </ul> */}
+            </ul>
         </nav>
     )
 }

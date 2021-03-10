@@ -21,11 +21,9 @@ const Video = () => {
       loadingComponent={<p>loading ...</p>}
       errorComponent={<p>Oops, something went wrong</p>} />
   ) : (
-    <form className='video'>
       <button onClick={handleClick} type='submit'>
         Join Group Video Chat
       </button>
-    </form>
   )
 }
 

@@ -1,12 +1,14 @@
 import React from 'react'
 import Video from './Video'
+import Nav from './Nav'
+import Pieces from './Pieces'
 import './Place.css'
 
 export default function Place() {
     return (
-        <div className='place'>
+        <div className='piecesbg'>
+            <Nav/>
             <Video/>
-            <h2>Hi</h2>
         </div>
     )
 }
