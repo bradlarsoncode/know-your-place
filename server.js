@@ -59,8 +59,11 @@ app.get("/api/users", async(req, res) => {
 })
 
 
-const Port = 5000;
+// const Port = 5000;
 
-app.listen( Port, () => {
-    console.log("Server running on Port " + Port);
-})
+// app.listen( Port, () => {
+//     console.log("Server running on Port " + Port);
+// })
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
